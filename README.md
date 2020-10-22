@@ -1,7 +1,7 @@
 # Introducing ABENA: BERT Natural Language Processing for Twi
 This repo contains the training scripts for training our ABENA family of models for BERT-type NLP on the Ghanaian language Twi. ABENA stands for "A BERT Now in Akan".
 
-**PLEASE NOTE THAT THIS IS A WORK IN PROGRESS. THE DATA HAS A STRONG RELIGIOUS BIAS, EVEN THOUGH THE MODEL IS ALREADY A USEFUL TOOL FOR MANY APPLICATIONS, IT IS CRITICAL TO KEEP THE BIAS IN MIND. WE MAKE IT FREELY AVAILABLE IN THE HOPE THAT IT WILL HELP A LOT OF PEOPLE, BUT YOU USE AT YOUR OWN RISK.**
+**PLEASE NOTE THAT THIS IS A WORK IN PROGRESS. THE DATA HAS A STRONG RELIGIOUS BIAS, EVEN THOUGH THE MODEL IS ALREADY A USEFUL TOOL FOR MANY APPLICATIONS, IT IS CRITICAL TO KEEP THE BIAS IN MIND. WE MAKE IT FREELY AVAILABLE IN THE HOPE THAT IT WILL HELP A LOT OF PEOPLE, BUT YOU USE IT AT YOUR OWN RISK.**
 
 (link the ABENA pic here)
 
@@ -34,6 +34,6 @@ BAKO stands for "BERT with Akan Knowledge Only", i.e., trained from scratch on m
 
 We found BERT and DistilBERT not suitable for this right now, given the relatively small size of the dataset (JW300). For this reason we only presented RoBERTa versions of BAKO: RoBAKO - Robustly Optimized BAKO. 
 
-[RoBERTa](https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/) is an improvement on BERT that employs clever optimization tricks for better efficiency. In particular, we use byte-pair encoding (BPE) for tokenization, which is arguably more effective than the WordPiece approach used by BERT and DistilBERT.
+[RoBERTa](https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/) is an improvement on BERT that employs clever optimization tricks for better efficiency. In particular, among other improvements, we use byte-pair encoding (BPE) for tokenization, which is arguably more effective than the WordPiece approach used by BERT and DistilBERT.
 
 In short, first train tokenizer (`RoBERTa/train_BPE_tokenizer.py`), and then train model (`RoBERTa/train_RoBERTa.py`).
