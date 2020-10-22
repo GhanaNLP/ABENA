@@ -3,7 +3,7 @@ from pathlib import Path
 from tokenizers import BertWordPieceTokenizer
 
 #paths = [str(x) for x in Path("./eo_data/").glob("**/*.txt")]
-paths = ['jw300.en-tw.tw']
+paths = ['../../data/jw300.en-tw.tw','../../data/asante_twi_bible.txt']
 
 # Initialize a tokenizer
 tokenizer = BertWordPieceTokenizer()
@@ -12,7 +12,7 @@ tokenizer = BertWordPieceTokenizer()
 # And then train
 tokenizer.train(
     paths,
-    vocab_size=10000,
+    vocab_size=30000,
     min_frequency=2,
     show_progress=True,
     special_tokens=["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"],
@@ -21,4 +21,4 @@ tokenizer.train(
 )
 
 # Save files to disk
-tokenizer.save("twibert")
+tokenizer.save("abena-base-v2-akuapem-twi-cased")
