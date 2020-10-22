@@ -5,7 +5,7 @@ This repo contains the training scripts for training our ABENA family of models 
 
 (link the ABENA pic here)
 
-Both the Asante and Akuapem dialects are addressed. Akuapem is addressed via the [JW300 twi subset](https://www.kaggle.com/azunre/jw300entw) and Twi via the [Asante Twi Bible] (www.bible.org) (get a clean copy of the Bible dataset from the links in [this paper](https://www.aclweb.org/anthology/2020.lrec-1.335.pdf)).
+Both the Asante and Akuapem dialects are addressed. Akuapem is addressed via the [JW300 twi subset](https://www.kaggle.com/azunre/jw300entw) and Twi via the [Asante Twi Bible](www.bible.org) (get a clean copy of the Bible dataset from the links in [this paper](https://www.aclweb.org/anthology/2020.lrec-1.335.pdf)).
 
 We perform a variety of experiments with BERT, DistilBERT and RoBERTa modeling architectures. You can find more details in our associated (blog post). You can find the 8 models this effort yielded listed in the [Hugging Face Model Hub](https://huggingface.co/Ghana-NLP) and see instructions on how to use them in this [Kaggle Notebook](https://www.kaggle.com/azunre/ghananlp-abena-usage-demo)
 
@@ -21,7 +21,11 @@ We introduce at least four different flavors of ABENA:
 * Subsequently, we fine-tune this model further on the Asante Twi Bible data to obtain an Asante Twi version of the model. This model is uncased due to the significantly smaller size of the Bible compared to JW300.
 * Additionally, we perform both experiments using the DistilBERT architecture instead of BERT -  this yields smaller and more lightweight versions of the (i) Akuapem and (ii) Asante ABENA models.
 
-We experiment with training our own tokenizer even when fine-tuning from pretrained mBERT weights, which yields some additional model flavors. To train your own flavors of the models, it suffices to train tokenizers with `BERT\train_WordPiece_tokenizer.py` / `DistilBERT\train_WordPiece_tokenizer.py`, followed by training the models with `BERT\train_BERT.py` / `DistilBERT\train_DistilBERT.py`. More details on convergence times, numbers of parameters, etc., can be found in our associated (blog post). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping it into our [Kasa Library](https://github.com/GhanaNLP/kasa).
+We also experiment with training our own tokenizer even when fine-tuning from pretrained mBERT weights, which yields some additional model flavors. 
+
+To train your own flavors of the models, it suffices to train tokenizers with `BERT\train_WordPiece_tokenizer.py` / `DistilBERT\train_WordPiece_tokenizer.py`, followed by training the models with `BERT\train_BERT.py` / `DistilBERT\train_DistilBERT.py`. 
+
+More details on convergence times, numbers of parameters, etc., can be found in our associated (blog post). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
 
 # RoBAKO -- "Robust BERT with Akan Knowledge Only" -- RoBERTA for Twi
 This implementation largely follows this [tutorial from Hugging Face](https://huggingface.co/blog/how-to-train). 
