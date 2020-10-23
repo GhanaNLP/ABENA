@@ -9,7 +9,7 @@ This repo contains the training scripts for training our ABENA family of models 
 
 Both the Asante and Akuapem dialects are addressed. Akuapem is addressed via the [JW300 twi subset](https://www.kaggle.com/azunre/jw300entw) and Twi via the [Asante Twi Bible](www.bible.org) (get a clean copy of the Bible dataset from the links in [this paper](https://www.aclweb.org/anthology/2020.lrec-1.335.pdf)).
 
-We perform a variety of experiments with BERT, DistilBERT and RoBERTa modeling architectures. You can find more details in our associated (blog post). You can find the 8 models this effort yielded listed in the [Hugging Face Model Hub](https://huggingface.co/Ghana-NLP) and see instructions on how to use them in this [Kaggle Notebook](https://www.kaggle.com/azunre/ghananlp-abena-usage-demo)
+We perform a variety of experiments with BERT, DistilBERT and RoBERTa modeling architectures. You can find more details in our associated [blog post](https://nlpghana.medium.com/introducing-abena-bert-natural-language-processing-for-twi-d55a6cb312ee). You can find the 8 models this effort yielded listed in the [Hugging Face Model Hub](https://huggingface.co/Ghana-NLP) and see instructions on how to use them in this [Kaggle Notebook](https://www.kaggle.com/azunre/ghananlp-abena-usage-demo)
 
 All models presented were trained with a single Tesla K80 GPU on an NC6 Azure VM instance.
 
@@ -27,7 +27,7 @@ We also experiment with training our own tokenizer even when fine-tuning from pr
 
 To train your own flavors of the models, it suffices to train tokenizers with `BERT\train_WordPiece_tokenizer.py` / `DistilBERT\train_WordPiece_tokenizer.py`, followed by training the models with `BERT\train_BERT.py` / `DistilBERT\train_DistilBERT.py`. 
 
-More details on convergence times, numbers of parameters, etc., can be found in our associated (blog post). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
+More details on convergence times, numbers of parameters, etc., can be found in our associated [blog post](https://nlpghana.medium.com/introducing-abena-bert-natural-language-processing-for-twi-d55a6cb312ee). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
 
 # RoBAKO - "Robust BERT with Akan Knowledge Only" - RoBERTA for Twi
 This implementation largely follows this [tutorial from Hugging Face](https://huggingface.co/blog/how-to-train). 
