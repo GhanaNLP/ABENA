@@ -1,9 +1,9 @@
-# Introducing ABENA: BERT Natural Language Processing for Twi
+# ABENA: BERT Natural Language Processing for Twi
 This repo contains the training scripts for training our ABENA family of models for BERT-type NLP on the Ghanaian language Twi. ABENA stands for "A BERT Now in Akan".
 
 **PLEASE NOTE THAT THIS IS A WORK IN PROGRESS. THE DATA HAS A STRONG RELIGIOUS BIAS, EVEN THOUGH THE MODEL IS ALREADY A USEFUL TOOL FOR MANY APPLICATIONS, IT IS CRITICAL TO KEEP THE BIAS IN MIND. WE MAKE IT FREELY AVAILABLE IN THE HOPE THAT IT WILL HELP A LOT OF PEOPLE, BUT YOU USE IT AT YOUR OWN RISK.**
 
-(link the ABENA pic here)
+![ABENA - A BERT Now in Akan](https://github.com/GhanaNLP/ABENA/blob/master/Abena.png?raw=true)
 
 Both the Asante and Akuapem dialects are addressed. Akuapem is addressed via the [JW300 twi subset](https://www.kaggle.com/azunre/jw300entw) and Twi via the [Asante Twi Bible](www.bible.org) (get a clean copy of the Bible dataset from the links in [this paper](https://www.aclweb.org/anthology/2020.lrec-1.335.pdf)).
 
