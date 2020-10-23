@@ -17,7 +17,7 @@ Unless you are on Kaggle where the dependencies are already installed, be sure t
 
 ```pip install -r requirements.txt```
 
-# ABENA -- "A BERT Now in Akan" -- BERT for Twi
+# ABENA - "A BERT Now in Akan" - BERT for Twi
 We introduce at least four different flavors of ABENA:
 * We first employ transfer learning to fine-tune a multilingual BERT (mBERT) model on  the Twi subset of the JW300 dataset. This data is largely composed of the Akuapem dialect of Twi. This is a cased model.
 * Subsequently, we fine-tune this model further on the Asante Twi Bible data to obtain an Asante Twi version of the model. This model is uncased due to the significantly smaller size of the Bible compared to JW300.
@@ -29,7 +29,7 @@ To train your own flavors of the models, it suffices to train tokenizers with `B
 
 More details on convergence times, numbers of parameters, etc., can be found in our associated (blog post). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
 
-# RoBAKO -- "Robust BERT with Akan Knowledge Only" -- RoBERTA for Twi
+# RoBAKO - "Robust BERT with Akan Knowledge Only" - RoBERTA for Twi
 This implementation largely follows this [tutorial from Hugging Face](https://huggingface.co/blog/how-to-train). 
 
 BAKO stands for "BERT with Akan Knowledge Only", i.e., trained from scratch on monolingual Twi data. 
