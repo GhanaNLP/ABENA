@@ -12,7 +12,7 @@ tokenizer.save_vocabulary("abena-base-asante-twi-uncased") # saving pretrained t
 from transformers import BertForMaskedLM
 
 #model = BertForMaskedLM.from_pretrained("bert-base-multilingual-cased") # start with mBERT checkpoint weights
-model = BertForMaskedLM.from_pretrained("abena-base-akuapem-twi-cased") # start with mBERT checkpoint weights # for asante, start with akuapem weights
+model = BertForMaskedLM.from_pretrained("abena-base-akuapem-twi-cased") # for asante, start with akuapem weights
 
 print("Number of parameters in mBERT model:")
 print(model.num_parameters())
