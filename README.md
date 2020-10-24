@@ -27,7 +27,7 @@ We also experiment with training our own tokenizer even when fine-tuning from pr
 
 To train your own flavors of the models, it suffices to train tokenizers with `BERT\train_WordPiece_tokenizer.py` / `DistilBERT\train_WordPiece_tokenizer.py`, followed by training the models with `BERT\train_BERT.py` / `DistilBERT\train_DistilBERT.py`. 
 
-More details on convergence times, numbers of parameters, etc., can be found in our associated [blog post](https://nlpghana.medium.com/introducing-abena-bert-natural-language-processing-for-twi-d55a6cb312ee). The scripts have been heavily documented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
+More details on convergence times, numbers of parameters, etc., can be found in our associated [blog post](https://nlpghana.medium.com/introducing-abena-bert-natural-language-processing-for-twi-d55a6cb312ee). The scripts have been heavily commented to help you out. We anticipate making these even more user-friendly shortly by wrapping them into our [Kasa Library](https://github.com/GhanaNLP/kasa).
 
 # RoBAKO - "Robust BERT with Akan Knowledge Only" - RoBERTA for Twi
 This implementation largely follows this [tutorial from Hugging Face](https://huggingface.co/blog/how-to-train). 
